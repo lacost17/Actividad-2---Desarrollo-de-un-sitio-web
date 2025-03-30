@@ -1,0 +1,208 @@
+body
+    {
+    
+    background-image: linear-gradient(160deg, #d98b88 10%, #f4bfc4 24%, #92c5be 49%, #f2e9dd 75%, #b8b7b5 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* font-family: "Lora";
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; */
+    
+    }
+
+header
+    {
+        background-color: #d98b88;
+    }
+.myTittle
+    {
+        font-family: 'Lora', cursive;
+        font-size: 5.0rem;
+        color: #e8e4e6;
+       
+    }
+p
+    {
+        font-size: 1.0rem;
+        color: #6394dc;
+    }
+    .ButtonNav
+    {
+        background: none;
+        border: none;
+        font-size: 1.0rem;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        margin: 15px;
+        background-color: #D98B88;
+        padding: 25px;
+        border-radius: 40px;
+        color: #F2E9DD;
+    }
+    .ButtonNav:hover
+    {
+       background-color: #F2E9DD;
+        color: #D98B88;
+    }
+    .ButtonNav::after,
+    .ButtonNav::before
+    {
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .ButtonNav::before
+    {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        left: -2em;
+        right: -2em;
+        top: -2em;
+        bottom: -2em;
+        background-repeat: no-repeat;
+        background-image: radial-gradient(circle, #556707 20%, transparent 20%),
+      
+    }
+    
+    .ButtonNav:hover::before
+    {
+        background-position: 5% 44%, -5% 20%, 7% 5%, 23% 0%, 37% 0, 58% -2%, 80% 0%,
+        100% -2%, -5% 80%, 100% 55%, 2% 100%, 23% 100%, 42% 100%, 60% 95%, 70% 96%,
+        100% 100%;
+        background-size: 0% 0%;
+        transition: background-position 0.5s ease-in-out, background-size 0.75s ease-in-out;
+    }
+    
+
+/* Estilo general del acordeón */
+.accordion
+ {
+   background-image: linear-gradient(160deg, #d98b88 10%, #f4bfc4 24%, #92c5be 49%, #f2e9dd 75%, #b8b7b5 100%);;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de cada elemento del acordeón */
+.accordion-item 
+{
+    border: none;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilo del botón del encabezado */
+.accordion-button
+ {
+    background-image: linear-gradient(160deg, #d98b88 10%, #f4bfc4 24%, #92c5be 49%, #f2e9dd 75%, #b8b7b5 100%);
+    font-weight: bold;
+    padding: 12px 16px;
+    border-radius: 8px;
+        transition: background-color 0.3s ease-in-out;
+}
+
+/* Cambia el color al estar expandido */
+.accordion-button:not(.collapsed)
+{
+   background-image: linear-gradient(160deg, #d98b88 10%, #f4bfc4 24%, #92c5be 49%, #f2e9dd 75%, #b8b7b5 100%);
+    color: white;
+    box-shadow: none;
+}
+
+/* Remover el borde al hacer click */
+.accordion-button:focus 
+{
+    box-shadow: none;
+    border: none;
+}
+
+/* Estilo del contenido del acordeón */
+.accordion-body 
+{
+    background-image: linear-gradient(160deg, #d98b88 10%, #f4bfc4 24%, #92c5be 49%, #f2e9dd 75%, #b8b7b5 100%);
+    color: #070707;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+/* Transición suave al expandirse */
+.accordion-collapse 
+{
+    transition: all 0.4s ease-in-out;
+}
+/*estilos del footer*/
+.myFooter
+{
+    background: rgba(47, 76, 73, 0.942);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(255, 253, 253, 0.3);
+    padding: 20px;
+  
+  }
+  
+.redsocial
+  {
+    display: flex;
+    height: 70px;
+    width: 270px;
+  }
+
+.redsocial svg
+  {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+.redsocial .Instagram, .redsocial .twitter, .redsocial .whatsapp
+  {
+   position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+  }
+
+.redsocial svg
+  {
+    transform: scale(0.75);
+  }
+  
+.redsocial .Instagram:hover
+  {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.5s linear;
+  }
+
+
+.redsocial .twitter:hover
+  {
+    background-color: #00ccff;
+    animation: bounce_613 0.5s linear;
+  }
+
+.redsocial .whatsapp:hover
+    {
+        background-color: #12a50b;
+        animation: bounce_613 0.5s linear;
+    }
